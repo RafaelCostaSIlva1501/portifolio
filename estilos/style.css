@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*First Mobile*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabeçalho{
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px #0000006b;
+    background-color: white;
+    height: 10vh;
+}
+
+.cabeçalho #icoMenu{
+    display: block;
+
+    margin-right: 10px;
+    width: 50px;
+}
+
+#navegar{
+    display: none;
+}
+
+
+#navegar ul{
+    padding: 0.1px 1px 1px 1px;
+    background-color: white;
+}
+
+#navegar ul li{
+    text-align: center;
+    background-color: black;
+
+    padding: 3px;
+    margin: 2px 1px 1px 1px;
+}
+
+#navegar ul li a{
+    color: white;
+}
+
+#inicio {
+    text-align: center;
+}
+
+.container-txt{
+    margin: 20px 0px;
+}
+
+.container-tec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-tec div img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+

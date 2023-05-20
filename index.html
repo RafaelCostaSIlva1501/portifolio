@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Portifólio | Rafael da Costa Silva</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+
+    <header class="cabeçalho">
+        <img src="imagens/icone-menu.png" alt="Icone do Menu" id="icoMenu" onclick="navHidden()">
+
+        <nav id="navegar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projeto">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <div class="container-txt">
+            <p style="font-weight: 100;">Rafael Costa Silva</p>
+          
+            <p style="font-size: 2em; font-weight: bold;">Desenvolvedor Front-End</p>
+           
+            <p style="font-weight: 400; font-size: 1.2em;">Estudante da área de desenvolvimento web com foco nas tecnologias:</p>
+        </div>
+
+        <div class="container-tec">
+            <div>
+                <abbr title="Hyper Text Markup Language">
+                    <p>HTML5</p>
+                    <img src="imagens/html5-logo.png" alt="Logo da HTML5">
+                </abbr>
+            </div>
+
+            <div>
+                <abbr title="Cascading Style Sheets">
+                    <p>CSS3</p>
+                    <img src="imagens/css3-logo.png" alt="Logo da CSS3">
+                </abbr>
+            </div>
+
+            <div>
+                <abbr title="Java Script">
+                    <p>JS</p>
+                    <img src="imagens/javascript-logo.png" alt="Logo do JavaScript">
+                </abbr>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        function navHidden() {
+            if (navegar.style.display == 'block') {
+                navegar.style.display = 'none'
+            } else {
+                navegar.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
