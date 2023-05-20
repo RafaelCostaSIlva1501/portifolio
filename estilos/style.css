@@ -10,7 +10,7 @@
 }
 
 html{
-    background-color: white;
+    background-color: #eeeeee;
 }
 
 body{
@@ -64,6 +64,10 @@ body{
     margin: 20px 0px;
 }
 
+.container-txt p{
+    line-height: 1.5em;
+}
+
 .container-tec{
     display: flex;
     flex-direction: row;
@@ -71,8 +75,14 @@ body{
 }
 
 .container-tec div img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+}
+
+.container-tec div img:hover{
+
+    transform: scale(1.1);
+    transition: transform 1s;
 }
 
 
