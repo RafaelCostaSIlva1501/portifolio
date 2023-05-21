@@ -20,33 +20,36 @@ body, html{
 
 .cabeçalho{
     box-shadow: 0px 0px 10px 1px #0000006b;
-    background-color: white;
+    background-color: #000000;
     height: 7vh;
 }
 
 .cabeçalho #icoMenu{
     display: block;
-
-    margin: auto;
-    width: 50px;
+    border-radius: 54px;
+    width: 45px;
+    margin-left: 18px;
+    background-color: white;
 }
 
 #navegar{
     display: none;
-    position: relative;
+    position: fixed;
+    top: 6%;
 }
 
 
 #navegar ul{
     background-color: black;
     list-style: none;
+    height: 100vh;
+    width: 17vw;
 }
 
 #navegar ul li{
-    text-align: center;
     background-color: black;
-
-    padding: 3px;
+    text-align: center;
+    padding: 10px 3px;
     margin: 2px 1px 1px 1px;
 }
 
