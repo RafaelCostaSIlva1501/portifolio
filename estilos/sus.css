@@ -3,10 +3,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html{
-    background-color: #868414;
+    background-color: #e7e7e7;
 }
 
 header{
@@ -21,8 +24,10 @@ header{
 
 #navegar{
     display: none;
-    background-color: #282828;
+    background-color: #282828b0;
     height: 90vh;
+    width: 100%;
+    position: absolute;
 }
 
 ul li a{
@@ -34,7 +39,31 @@ ul li a{
 }
 
 ul li a:hover{
-    background-color: #3b3b3b;
+    background-color: #3b3b3bb9;
     transition: background-color 1s;
 }
 
+.container-txt{
+    margin: 20px 0px 30px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.container-txt p{
+    margin: 10px 0px;
+}
+
+.container-tec{
+    display: flex;
+    text-align: center;
+
+    justify-content: center;
+}
+
+.container-tec img{
+    width: 120px;
+}
+
+#sobre img{
+    
+}

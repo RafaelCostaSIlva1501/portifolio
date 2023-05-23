@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos/sus.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Portifólio | Rafael da Costa Silva</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
+
 <body>
 
-    <header>
-        <img id="" onclick="navHidden()" src="imagens/icone-menu.png" alt="">
+    <!--Cabeçalho-->
+    <header class="cabeçalho">
+        <img src="imagens/icone-menu.png" alt="Icone do Menu" id="icoMenu" onclick="navHidden()">
     </header>
 
-    <nav id="navegar"> 
+    <!--Guia de navegação-->
+    <nav id="navegar">
         <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -21,7 +25,8 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
+    
+    <!--Início-->
     <main id="inicio">
 
         <div class="container-txt">
@@ -38,7 +43,6 @@
                     <p>HTML5</p>
                     <img src="imagens/html5-logo.png" alt="Logo da HTML5">
                 </abbr>
-                <p style="font-size: 9px;">Uma linguagem de marcação responsável para criar e estruturar o conteúdo de páginas web.</p>
             </div>
 
             <div>
@@ -46,7 +50,6 @@
                     <p>CSS3</p>
                     <img src="imagens/css3-logo.png" alt="Logo da CSS3">
                 </abbr>
-                <p style="font-size: 9px;">Uma linguagem de estilo responsável pelo design de páginas web.</p>
             </div>
 
             <div>
@@ -54,14 +57,12 @@
                     <p>JS</p>
                     <img src="imagens/javascript-logo.png" alt="Logo do JavaScript">
                 </abbr>
-                <p style="font-size: 9px;">Uma linguagem de programação responsável pela interatividade e funcionalidades das páginas web.</p>
             </div>
+            
+        </div>
     </main>
 
-    <section id="sobre">
-        <img src="imagens/Eu.jpg" alt="">
-    </section>
-
+ 
     <script>
         function navHidden() {
             if (navegar.style.display == 'block') {
@@ -71,6 +72,8 @@
             }
         }
     </script>
-    
+
+    <a href="teste.html"></a>
+
 </body>
 </html>
