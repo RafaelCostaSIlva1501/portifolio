@@ -25,7 +25,7 @@ header{
 #navegar{
     display: none;
     background-color: #282828b0;
-    height: 90vh;
+    height: 96vh;
     width: 100%;
     position: absolute;
 }
@@ -41,6 +41,10 @@ ul li a{
 ul li a:hover{
     background-color: #3b3b3bb9;
     transition: background-color 1s;
+}
+
+#inicio{
+    height: 90vh;
 }
 
 .container-txt{
@@ -64,6 +68,15 @@ ul li a:hover{
     width: 120px;
 }
 
+#sobre{
+    background-color: black;
+    height: 100vh;
+}
+
 #sobre img{
-    
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 200px;
+    margin: 20px auto;
 }
