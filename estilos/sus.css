@@ -22,9 +22,6 @@ header{
     width: 100%;
 }
 
-header img{
-}
-
 #navegar{
     display: none;
     background-color: #282828e5;
@@ -39,7 +36,7 @@ ul li a{
     text-decoration: none;
     text-align: center;
     padding: 20px;
-    margin: 50px;
+    margin: 30px;
     font-size: 2.5em;
     border-radius: 10px;
 }
@@ -106,7 +103,5 @@ ul li a:hover{
     color: #ffffff98;
 }
 
-#projetos{
-    height: 100vh;
-}
+
 
