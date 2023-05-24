@@ -16,7 +16,6 @@ button{
 
 html{
     background-color: #e7e7e7;
-    overflow-y: unset;
 }
 
 header{
@@ -136,7 +135,7 @@ ul li a:hover{
 .img-proj{
     display: block;
     margin: auto;
-    width:400px;
+    width: 350px;
     height: 250px;
     background-image: url(../imagens/em-breve.png);
     background-repeat: no-repeat;
@@ -148,8 +147,8 @@ ul li a:hover{
 }
 
 .txt-proj{
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 150px;
     display: block;
     margin: auto;
 }
