@@ -71,7 +71,7 @@ ul li a:hover{
 #sobre{
     background-color: black;
     height: 100vh;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 #sobre > img{
@@ -79,4 +79,27 @@ ul li a:hover{
     border-radius: 50%;
     border: 2px solid #ffffff;
     width: 200px;
+    margin: 0px auto 10px auto;
 }
+
+.container-txt-sobre{
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: center;
+    line-height: 2em; 
+}
+
+.container-txt-sobre a{
+    color: white;
+    text-decoration: underline;
+}
+
+.container-txt-sobre a:hover{
+    color: #ffffff98;
+}
+
+#projetos{
+    height: 100vh;
+}
+

@@ -15,10 +15,10 @@
 
     <nav id="navegar"> 
         <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projeto">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#inicio" onclick="esconder()">Início</a></li>
+            <li><a href="#sobre" onclick="esconder()">Sobre</a></li>
+            <li><a href="#projeto" onclick="esconder()">Projetos</a></li>
+            <li><a href="#contato" onclick="esconder()">Contato</a></li>
         </ul>
     </nav>
 
@@ -59,7 +59,18 @@
     </main>
 
     <section id="sobre">
-        <img src="imagens/Eu.jpg" alt="">
+        <img src="imagens/Eu.jpg" alt="Minha foto">
+
+        <div class="container-txt-sobre">
+            <h2>Sobre mim</h2>
+
+            <p>Me chamo Rafael, tenho 19 anos, sou um desenvolvedor Front-End iniciante e músico nas horas vagas. Meu primeiro contato direto com programação foi assistindo um vídeo do curso de JavaScript do <a href="https://www.youtube.com/user/cursosemvideo" target="_blank" >Curso em Vídeo</a>. Me apaixonei pelo Front-End e imediatamente iníciei meus estudos em JavaScript e HTML5-CSS3, entretanto estudo com o objetivo de um dia me tornar um Programador <strong>Full-Stack</strong></p>
+            <p>Atualmente estudo através da plataforma do Curso em Vídeo, onde possuo certificação em alguns cursos. Também crio meus próprios projetos para aprimorar as minhas habilidades e exercitar a criatividade</p>
+        </div>
+    </section>
+
+    <section id="projetos">
+
     </section>
 
     <script>
@@ -69,6 +80,12 @@
             } else {
                 navegar.style.display = 'block'
             }
+        }
+    </script>
+
+    <script>
+        function  esconder(){
+            navegar.style.display = 'none'
         }
     </script>
     
