@@ -9,15 +9,15 @@
 </head>
 <body>
 
-    <header>
-        <img id="" onclick="navHidden()" src="imagens/icone-menu.png" alt="">
+    <header id="menuH">
+        <img onclick="navHidden()" src="imagens/icone-menu.png" alt="">
     </header>
 
     <nav id="navegar"> 
         <ul>
             <li><a href="#inicio" onclick="esconder()">Início</a></li>
             <li><a href="#sobre" onclick="esconder()">Sobre</a></li>
-            <li><a href="#projeto" onclick="esconder()">Projetos</a></li>
+            <li><a href="#projetos" onclick="esconder()">Projetos</a></li>
             <li><a href="#contato" onclick="esconder()">Contato</a></li>
         </ul>
     </nav>
@@ -75,17 +75,16 @@
 
     <script>
         function navHidden() {
-            if (navegar.style.display == 'block') {
-                navegar.style.display = 'none'
-            } else {
-                navegar.style.display = 'block'
-            }
+            navegar.style.display = 'block' 
+            menuH.style.display = 'none'
         }
+
     </script>
 
     <script>
         function  esconder(){
             navegar.style.display = 'none'
+            menuH.style.display = 'block'
         }
     </script>
     
