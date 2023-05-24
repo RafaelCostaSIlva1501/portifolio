@@ -16,6 +16,7 @@ button{
 
 html{
     background-color: #e7e7e7;
+    overflow-y: unset;
 }
 
 header{
@@ -113,6 +114,15 @@ ul li a:hover{
 
 #projetos{
     height: 100vh;
+}
+
+#projetos h2{
+    text-align: center;
+    margin: 20px;
+}
+#projetos p{
+    text-align: center;
+    margin: 20px;
 }
 
 .container-img-proj{
