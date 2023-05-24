@@ -8,6 +8,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Reset de botões*/
+button{
+    border: none;
+    background: none;
+}
+
 html{
     background-color: #e7e7e7;
 }
@@ -74,7 +80,7 @@ ul li a:hover{
 
 #sobre{
     background-color: black;
-    height: 100vh;
+    height: 100%;
     padding-top: 30px;
 }
 
@@ -89,8 +95,10 @@ ul li a:hover{
 .container-txt-sobre{
     display: block;
     margin: auto;
+    padding: 25px ;
     color: white;
     text-align: center;
+    font-size: 12px;
     line-height: 2em; 
 }
 
@@ -103,5 +111,73 @@ ul li a:hover{
     color: #ffffff98;
 }
 
+#projetos{
+    height: 100vh;
+}
 
+.container-img-proj{
+    display: block;
+    margin: auto;
+    width: max-content;
+    box-shadow: 0px 0px 7px 1px #0000006c;
+    border-radius: 20px;
+}
+
+.img-proj{
+    display: block;
+    margin: auto;
+    width:400px;
+    height: 250px;
+    background-image: url(../imagens/em-breve.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.txt-proj{
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.container-btn-proj{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #282828;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.bnt-proj{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bnt-proj img{
+    width: 40px;
+    margin: 10px;
+}
+
+#btn-git{
+    border-bottom-left-radius: 20px;
+}
+
+#btn-tela{
+    border-bottom-right-radius: 20px;
+}
+
+.container-btn-proj hr{
+    border: none;
+    background-color: #ffffffc9;
+    width: 1px;
+    height: 60px;
+}
 
