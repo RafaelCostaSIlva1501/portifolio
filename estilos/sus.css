@@ -153,52 +153,54 @@ ul li a:hover{
     margin: auto;
 }
 
-.container-btn-proj{
+.container-btn{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    background-color: #282828;
-    border-radius: 0px 0px 20px 20px;
+    align-items: center;
 }
 
-.bnt-proj{
+.btn-estilo{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    width: 100%;
-    color: white;
-    cursor: pointer;
-}
-
-.bnt-proj img{
-    width: 40px;
-    margin: 10px;
-}
-
-#btn-git{
-    border-bottom-left-radius: 15px;
-}
-
-#btn-git:hover{
-    background-color: #a3a3a34d;
-    transition: background-color 0.5s;
-}
-
-#btn-tela{
-    border-bottom-right-radius: 15px;
-}
-
-#btn-tela:hover{
-    background-color: #ffffff4d;
-    transition: background-color 0.5s;
-}
-
-.container-btn-proj hr{
-    border: none;
-    background-color: #ffffffc9;
-    width: 1px;
+    align-items: center;
     height: 60px;
 }
 
+.container-btn img{
+    width: 40px;
+}
+
+#btn-git{
+    width: 175px;
+    background-color: #282828;
+    border-bottom-left-radius: 20px;
+}
+
+#btn-git:hover{
+    background-color: #646464b6;
+    transition: background-color 1.5s;
+}
+
+#btn-tela{
+    width: 175px;
+    background-color: #282828;
+    border-bottom-right-radius: 20px;
+}
+
+#btn-tela:hover{
+    background-color: #646464b6;
+    transition: background-color 1.5s;
+}
+
+.container-btn hr{
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    border: none;
+}
+
+.container-btn a{
+    color: white;
+}
