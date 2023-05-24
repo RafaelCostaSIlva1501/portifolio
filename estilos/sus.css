@@ -168,6 +168,8 @@ ul li a:hover{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    color: white;
+    cursor: pointer;
 }
 
 .bnt-proj img{
@@ -176,11 +178,21 @@ ul li a:hover{
 }
 
 #btn-git{
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 15px;
+}
+
+#btn-git:hover{
+    background-color: #a3a3a34d;
+    transition: background-color 0.5s;
 }
 
 #btn-tela{
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 15px;
+}
+
+#btn-tela:hover{
+    background-color: #ffffff4d;
+    transition: background-color 0.5s;
 }
 
 .container-btn-proj hr{
