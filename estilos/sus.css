@@ -8,10 +8,20 @@
     font-family: monospace;
 }
 
-/*Reset de botões*/
+/*Reset*/
 button{
     border: none;
     background: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+textarea{
+    outline: none;
 }
 
 /*Configurações do html e body*/
@@ -270,16 +280,57 @@ ul li a:hover{
     color: white;
 }
 
-/*Entre em conto comigo*/
+/*Formulário para contato*/
 #contato{
     height: 100vh;
     background: black;
 }
 
+.contato-txt h2{
+    font-size: 2.5em;
+}
+
+.contato-txt > h2, p{
+    text-align: center;
+    color: white;
+}
+
 .formulario{
+    display: block;
+    width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #646464;
+}
+
+label{
+    margin: 20px 0px 0px 10px;
+    font-size: 1.5em;
+}
+
+input{
+    margin: 10px;
+    padding: 2px;
+    border-bottom: 1px solid #646464;
+}
+
+textarea{
+    resize: none;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px;
+    height: 90px;
+
+}
+
+.container-input{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    margin: 10px;
 }
 
 
