@@ -282,7 +282,7 @@ ul li a:hover{
 
 /*Formulário para contato*/
 #contato{
-    height: 100vh;
+    height: max-content;
     padding: 20px;
     background: black;
 }
@@ -319,6 +319,10 @@ input{
     border-bottom: 1px solid #646464;
 }
 
+input:focus{
+    border-color: black;
+}
+
 textarea{
     resize: none;
     display: block;
@@ -328,6 +332,10 @@ textarea{
     width: 250px;
     height: 90px;
 
+}
+
+textarea:focus{
+    border-color: black;
 }
 
 .container-input{
@@ -342,10 +350,19 @@ textarea{
 }
 
 #enviar{
-    border: 1px solid #282828;
+    border: 1px solid #3f3f3f;
     border-radius: 20px;
     padding: 20px;
     width: 150px;
+    cursor: pointer;
+    color: #3f3f3f;
 }
+
+#enviar:active{
+    border-color: black;
+    color: black;
+}
+
+
 
 
