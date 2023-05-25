@@ -283,14 +283,17 @@ ul li a:hover{
 /*Formulário para contato*/
 #contato{
     height: 100vh;
+    padding: 20px;
     background: black;
 }
 
 .contato-txt h2{
+    text-align: center;
+    color: white;
     font-size: 2.5em;
 }
 
-.contato-txt > h2, p{
+.contato-txt p{
     text-align: center;
     color: white;
 }
@@ -331,6 +334,18 @@ textarea{
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
+
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    border: 1px solid #282828;
+    border-radius: 20px;
+    padding: 20px;
+    width: 150px;
 }
 
 
