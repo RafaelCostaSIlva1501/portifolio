@@ -14,6 +14,7 @@ button{
     background: none;
 }
 
+/*Configurações do html e body*/
 html{
     background-color: #e7e7e7;
     display: block;
@@ -25,6 +26,7 @@ body{
     margin: auto;
 }
 
+/*Cabeçalho*/
 header{
     background-color: #282828;
     border-bottom: 1px solid #ffffffad;
@@ -35,6 +37,7 @@ header{
     width: 100%;
 }
 
+/*Menu Hamburger*/
 #navegar{
     display: none;
     background-color: #282828e5;
@@ -60,9 +63,13 @@ ul li a:hover{
     transition: transform 1s;
 }
 
+/*Conteúdo do início*/
 #inicio{
     height: 100vh;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
 }
 
 .container-txt{
@@ -78,7 +85,6 @@ ul li a:hover{
 .container-tec{
     display: flex;
     text-align: center;
-
     justify-content: center;
 }
 
@@ -96,6 +102,40 @@ ul li a:hover{
     margin: 0px 5px;
 }
 
+.container-redes{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-redes h2{
+    text-align: center;
+}
+
+
+.redes{
+    display: flex;
+    margin: auto;
+}
+
+.redes img{
+    width: 60px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px #00000050;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.redes div{
+    margin: 20px 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Sobre mim*/
 #sobre{
     background-color: black;
     height: 100%;
@@ -136,6 +176,7 @@ ul li a:hover{
     color: #ffffff98;
 }
 
+/*Área de projetos*/
 #projetos{
     height: 100vh;
 }
