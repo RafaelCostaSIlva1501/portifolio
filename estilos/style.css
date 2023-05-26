@@ -1,78 +1,369 @@
 @charset "UTF-8";
 
-/*First Mobile*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
 }
 
+/*Reset*/
+button{
+    border: none;
+    background: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+textarea{
+    outline: none;
+}
+
+/*Configurações do html e body*/
 html{
-    background-color: #eeeeee;
-    width: 100vw;
-    height: 100vh;
-}
-
-.cabeçalho{
-    background-color: #272727;
-    margin: 0;
-    padding: 0;
-}
-
-.cabeçalho #icoMenu{
+    background-color: #e7e7e7;
     display: block;
-    border-radius: 50%;
-    width: 45px;
     margin: auto;
 }
 
+body{
+    display: block;
+    margin: auto;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: #282828;
+    border-bottom: 1px solid #ffffffad;
+    height: 51px;
+
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+/*Menu Hamburger*/
 #navegar{
-    margin: 0;
-    padding: 0;
+    display: none;
+    background-color: #282828e5;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
 }
 
-#navegar ul{
-    background-color: #272727;
-    margin: 0; /* Adicionada esta linha */
-}
-
-#navegar ul li{
-    background-color: #272727;
-    text-align: center;
-    padding: 10px 3px;
-    margin: 2px 1px 1px 1px;
-}
-
-#navegar ul li a{
+ul li a{
+    display: block;
     color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    font-size: 2.5em;
+    border-radius: 10px;
 }
 
-#inicio {
-    text-align: center;
+ul li a:hover{
+    text-shadow: 1px 1px 5px #ffffff;
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/*Conteúdo do início*/
+#inicio{
+    height: min-content;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-txt{
-    margin: 20px 0;
+    margin: 20px 0px 30px;
+    text-align: center;
+    line-height: 2em;
 }
 
 .container-txt p{
-    line-height: 1.5em;
+    margin: 10px 0px;
 }
 
 .container-tec{
     display: flex;
-    flex-direction: row;
+    text-align: center;
     justify-content: center;
 }
 
-.container-tec div img{
+.container-tec img{
     width: 120px;
-    height: 120px;
 }
 
-.container-tec div img:hover{
+.container-tec img:hover{
     transform: scale(1.1);
     transition: transform 1s;
 }
+
+.tecs{
+    width: 140px;
+    margin: 0px 5px;
+}
+
+.container-redes{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-redes h2{
+    text-align: center;
+}
+
+
+.redes{
+    display: flex;
+    margin: auto;
+}
+
+.redes img{
+    width: 60px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.redes div{
+    margin: 20px 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Sobre mim*/
+#sobre{
+    background-color: black;
+    height: 100%;
+    padding-top: 30px;
+}
+
+#sobre > img{
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 200px;
+    margin: 0px auto 10px auto;
+}
+
+#sobre > img:hover{
+    box-shadow: 0px 0px 10px 2px white;
+    transition: box-shadow 0.5s;
+    transform: scale(1.1);
+    transition: transform 1.5s;
+}
+
+.container-txt-sobre{
+    display: block;
+    margin: auto;
+    padding: 25px ;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2em; 
+}
+
+.container-txt-sobre a{
+    color: white;
+    text-decoration: underline;
+}
+
+.container-txt-sobre a:hover{
+    color: #ffffff98;
+}
+
+/*Área de projetos*/
+#projetos{
+    height: max-content;
+}
+
+#projetos h2{
+    text-align: center;
+    margin: 20px;
+}
+#projetos p{
+    text-align: center;
+    margin: 20px;
+}
+
+.container-img-proj{
+    display: block;
+    margin: 20px auto;
+    width: max-content;
+    box-shadow: 0px 0px 7px 1px #0000006c;
+    border-radius: 20px;
+}
+
+.img-proj{
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 250px;
+    background-image: url(../imagens/em-breve.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.txt-proj{
+    width: 350px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-estilo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.container-btn img{
+    width: 40px;
+}
+
+#btn-git{
+    width: 175px;
+    background-color: #282828;
+    border-bottom-left-radius: 20px;
+}
+
+#btn-git:hover{
+    background-color: #646464b6;
+    transition: background-color 1.5s;
+}
+
+#btn-tela{
+    width: 175px;
+    background-color: #282828;
+    border-bottom-right-radius: 20px;
+}
+
+#btn-tela:hover{
+    background-color: #646464b6;
+    transition: background-color 1.5s;
+}
+
+.container-btn hr{
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    border: none;
+}
+
+.container-btn a{
+    color: white;
+}
+
+/*Formulário para contato*/
+#contato{
+    height: max-content;
+    padding: 20px;
+    background: black;
+}
+
+.contato-txt h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.contato-txt p{
+    text-align: center;
+    color: white;
+}
+
+.formulario{
+    display: block;
+    width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #646464;
+}
+
+label{
+    margin: 20px 0px 0px 10px;
+    font-size: 1.5em;
+}
+
+input{
+    margin: 10px;
+    padding: 2px;
+    border-bottom: 1px solid #646464;
+}
+
+input:focus{
+    border-color: black;
+}
+
+textarea{
+    resize: none;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px;
+    height: 90px;
+
+}
+
+textarea:focus{
+    border-color: black;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    border: 1px solid #3f3f3f;
+    border-radius: 20px;
+    padding: 20px;
+    width: 150px;
+    cursor: pointer;
+    color: #3f3f3f;
+}
+
+#enviar:active{
+    border-color: black;
+    color: black;
+}
+
+
+
 
